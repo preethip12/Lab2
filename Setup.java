@@ -29,7 +29,10 @@ public class Setup {
 	    for(int i=1; i<arraySize; i++){
 	    	arr.getElement(i).setLabel(String.valueOf(i*i));
 	    }
-	    
+	    for(int i=1; i<arraySize; i++){
+	    	arr.getElement(i).getVisualizer().setColor("maroon");
+	    	i+=1;
+	    }
 	    /* Tell BRIDGES which data structure to visualize */
 	    bridges.setDataStructure(arr);
 
